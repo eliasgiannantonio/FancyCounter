@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-function Count() {
-  return (
-    <p>0</p>
-  )
+function Count({ number }) {
+  return <p className="count">{number}</p>;
 }
 
-export default Count
+export default Count;
