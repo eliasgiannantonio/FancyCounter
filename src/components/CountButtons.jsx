@@ -3,12 +3,14 @@ import { MinusIcon, PlusIcon } from "@radix-ui/react-icons";
 
 function CountButtons({setNumber, number}) {
 
-    const handleSuma = () => {
+    const handleSuma = (event) => {
         setNumber(number + 1);
+        event.currentTarget.blur();
     }
 
-    const handleResta = () => {
+    const handleResta = (event) => {
         setNumber(number - 1);
+        event.currentTarget.blur();
     }
 
   return (
